@@ -30,8 +30,8 @@ jobs:
             <servers>
               <server>
                 <id>github</id>
-                <username>env.USER</username>
-                <password>env.PASSWORD</password>
+                <username>$USER</username>
+                <password>$PASSWORD</password>
               </server>
             </servers>
           </settings>
@@ -77,8 +77,8 @@ jobs:
             <servers>
               <server>
                 <id>github</id>
-                <username>env.USER</username>
-                <password>env.PASSWORD</password>
+                <username>$USER</username>
+                <password>$PASSWORD</password>
               </server>
             </servers>
           </settings>
