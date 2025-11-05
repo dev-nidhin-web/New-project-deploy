@@ -87,5 +87,22 @@ jobs:
           server-username: GITHUB_ACTOR
           server-password: ${{ secrets.GITHUB_TOKEN }}
 
+     - name: Configure Maven settings
+     run: |
+    mkdir -p ~/.m2
+    cat > ~/.m2/settings.xml <<EOF
+    <settings>
+      <servers>
+        <server>
+          <id>github</id>
+          <username>env.USER</username>
+          <password>env.PASSWORD</password>
+        </server>
+      </servers>
+    </settings>
+    EOF
+
+
+
       - name: Publish package to GitHub Packages
         run: mvn -B deploy
