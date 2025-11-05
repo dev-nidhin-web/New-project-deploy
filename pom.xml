@@ -74,7 +74,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages - Maven Repository</name>
-            <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+            <url>https://maven.pkg.github.com/dev-nidhin-web/New-project-deploy</url>
         </repository>
     </distributionManagement>
 
